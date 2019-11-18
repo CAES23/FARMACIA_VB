@@ -199,4 +199,12 @@ Public Class Menu
             tmOcultarMenu.Enabled = True
         End If
     End Sub
+
+    Private Sub GaeaToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub pnlContenido_Paint(sender As Object, e As PaintEventArgs) Handles pnlContenido.Paint
+
+    End Sub
 End Class
