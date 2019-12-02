@@ -1,7 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SISTEMA FARMACIA", "AVANCE\SISTEMA FARMACIA.vbproj", "{6316AD31-8223-4C73-A6E4-5EB05B3B3226}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.138
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CapaPresentacion", "AVANCE\CapaPresentacion.vbproj", "{6316AD31-8223-4C73-A6E4-5EB05B3B3226}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CapaLogicoNegocio", "CapaDatos\CapaLogicoNegocio.vbproj", "{AE8BD392-9780-489A-BF43-996B9F4F0FAD}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CapaAccesoDatos", "CapaAccesoDatos\CapaAccesoDatos.vbproj", "{4CBFFF20-3518-44E1-BDD0-86345DCE2CCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +19,19 @@ Global
 		{6316AD31-8223-4C73-A6E4-5EB05B3B3226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6316AD31-8223-4C73-A6E4-5EB05B3B3226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6316AD31-8223-4C73-A6E4-5EB05B3B3226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8BD392-9780-489A-BF43-996B9F4F0FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8BD392-9780-489A-BF43-996B9F4F0FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8BD392-9780-489A-BF43-996B9F4F0FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8BD392-9780-489A-BF43-996B9F4F0FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CBFFF20-3518-44E1-BDD0-86345DCE2CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CBFFF20-3518-44E1-BDD0-86345DCE2CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CBFFF20-3518-44E1-BDD0-86345DCE2CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CBFFF20-3518-44E1-BDD0-86345DCE2CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AE90109-7FE9-4BFF-8E70-BB4CA514A2C0}
 	EndGlobalSection
 EndGlobal

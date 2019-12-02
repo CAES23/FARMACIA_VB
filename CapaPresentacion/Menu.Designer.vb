@@ -26,9 +26,16 @@ Partial Class Menu
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
         Me.pnlTitule = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnMenu = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btnMinizar = New System.Windows.Forms.Button()
+        Me.btnRestaurar = New System.Windows.Forms.Button()
+        Me.btnMaximizar = New System.Windows.Forms.Button()
+        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.pnlMenu = New System.Windows.Forms.Panel()
+        Me.btnHelp = New System.Windows.Forms.Button()
         Me.PanelSubmenuReportes = New System.Windows.Forms.Panel()
         Me.btnLaboratiosRegR = New System.Windows.Forms.Button()
         Me.btnProveedores = New System.Windows.Forms.Button()
@@ -36,6 +43,7 @@ Partial Class Menu
         Me.btnVentasalclienteR = New System.Windows.Forms.Button()
         Me.btnComprareproveeR = New System.Windows.Forms.Button()
         Me.btnSubMedicamentosR = New System.Windows.Forms.Button()
+        Me.btnReportes = New System.Windows.Forms.Button()
         Me.PanelSubmenuConsultas = New System.Windows.Forms.Panel()
         Me.btnLaboratoriosReg = New System.Windows.Forms.Button()
         Me.btnProveedoresReg = New System.Windows.Forms.Button()
@@ -43,36 +51,28 @@ Partial Class Menu
         Me.btnVentasalcliente = New System.Windows.Forms.Button()
         Me.btnComprareprovee = New System.Windows.Forms.Button()
         Me.btnSubMedicamentos = New System.Windows.Forms.Button()
+        Me.btnConsultas = New System.Windows.Forms.Button()
+        Me.btnVender = New System.Windows.Forms.Button()
         Me.PanelSubmenuMedicamentos = New System.Windows.Forms.Panel()
         Me.btnRegMedicamentos = New System.Windows.Forms.Button()
         Me.btnRegLaboratorios = New System.Windows.Forms.Button()
         Me.btnRegProveedores = New System.Windows.Forms.Button()
+        Me.btnMedicamentos = New System.Windows.Forms.Button()
         Me.PanelSubmenuUsuarios = New System.Windows.Forms.Panel()
         Me.btnPermisosyseguridad = New System.Windows.Forms.Button()
         Me.btnrRegUsuario = New System.Windows.Forms.Button()
+        Me.btnUsuarios = New System.Windows.Forms.Button()
         Me.pnlContenido = New System.Windows.Forms.Panel()
         Me.tmOcultarMenu = New System.Windows.Forms.Timer(Me.components)
         Me.tmMostrarMenu = New System.Windows.Forms.Timer(Me.components)
-        Me.btnHelp = New System.Windows.Forms.Button()
-        Me.btnReportes = New System.Windows.Forms.Button()
-        Me.btnConsultas = New System.Windows.Forms.Button()
-        Me.btnVender = New System.Windows.Forms.Button()
-        Me.btnMedicamentos = New System.Windows.Forms.Button()
-        Me.btnUsuarios = New System.Windows.Forms.Button()
-        Me.btnMenu = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.btnMinizar = New System.Windows.Forms.Button()
-        Me.btnRestaurar = New System.Windows.Forms.Button()
-        Me.btnMaximizar = New System.Windows.Forms.Button()
-        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.pnlTitule.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlMenu.SuspendLayout()
         Me.PanelSubmenuReportes.SuspendLayout()
         Me.PanelSubmenuConsultas.SuspendLayout()
         Me.PanelSubmenuMedicamentos.SuspendLayout()
         Me.PanelSubmenuUsuarios.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlTitule
@@ -103,6 +103,18 @@ Partial Class Menu
         Me.Panel1.Size = New System.Drawing.Size(259, 43)
         Me.Panel1.TabIndex = 2
         '
+        'btnMenu
+        '
+        Me.btnMenu.BackgroundImage = CType(resources.GetObject("btnMenu.BackgroundImage"), System.Drawing.Image)
+        Me.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMenu.FlatAppearance.BorderSize = 0
+        Me.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMenu.Location = New System.Drawing.Point(221, 0)
+        Me.btnMenu.Name = "btnMenu"
+        Me.btnMenu.Size = New System.Drawing.Size(35, 37)
+        Me.btnMenu.TabIndex = 3
+        Me.btnMenu.UseVisualStyleBackColor = False
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -130,6 +142,79 @@ Partial Class Menu
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "FARMACIA"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(46, 37)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'btnMinizar
+        '
+        Me.btnMinizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMinizar.BackgroundImage = CType(resources.GetObject("btnMinizar.BackgroundImage"), System.Drawing.Image)
+        Me.btnMinizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnMinizar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinizar.FlatAppearance.BorderSize = 0
+        Me.btnMinizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnMinizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinizar.Location = New System.Drawing.Point(829, 0)
+        Me.btnMinizar.Name = "btnMinizar"
+        Me.btnMinizar.Size = New System.Drawing.Size(40, 40)
+        Me.btnMinizar.TabIndex = 1
+        Me.btnMinizar.UseVisualStyleBackColor = True
+        '
+        'btnRestaurar
+        '
+        Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRestaurar.BackgroundImage = CType(resources.GetObject("btnRestaurar.BackgroundImage"), System.Drawing.Image)
+        Me.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRestaurar.FlatAppearance.BorderSize = 0
+        Me.btnRestaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRestaurar.Location = New System.Drawing.Point(869, 0)
+        Me.btnRestaurar.Name = "btnRestaurar"
+        Me.btnRestaurar.Size = New System.Drawing.Size(40, 40)
+        Me.btnRestaurar.TabIndex = 1
+        Me.btnRestaurar.UseVisualStyleBackColor = True
+        Me.btnRestaurar.Visible = False
+        '
+        'btnMaximizar
+        '
+        Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMaximizar.BackgroundImage = CType(resources.GetObject("btnMaximizar.BackgroundImage"), System.Drawing.Image)
+        Me.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMaximizar.FlatAppearance.BorderSize = 0
+        Me.btnMaximizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximizar.Location = New System.Drawing.Point(869, 0)
+        Me.btnMaximizar.Name = "btnMaximizar"
+        Me.btnMaximizar.Size = New System.Drawing.Size(40, 40)
+        Me.btnMaximizar.TabIndex = 1
+        Me.btnMaximizar.UseVisualStyleBackColor = True
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCerrar.BackgroundImage = CType(resources.GetObject("btnCerrar.BackgroundImage"), System.Drawing.Image)
+        Me.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCerrar.FlatAppearance.BorderSize = 0
+        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrar.Location = New System.Drawing.Point(909, 0)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(40, 40)
+        Me.btnCerrar.TabIndex = 1
+        Me.btnCerrar.UseVisualStyleBackColor = True
+        '
         'pnlMenu
         '
         Me.pnlMenu.AutoScroll = True
@@ -149,6 +234,24 @@ Partial Class Menu
         Me.pnlMenu.Name = "pnlMenu"
         Me.pnlMenu.Size = New System.Drawing.Size(208, 556)
         Me.pnlMenu.TabIndex = 1
+        '
+        'btnHelp
+        '
+        Me.btnHelp.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.btnHelp.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnHelp.FlatAppearance.BorderSize = 0
+        Me.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHelp.Image = CType(resources.GetObject("btnHelp.Image"), System.Drawing.Image)
+        Me.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHelp.Location = New System.Drawing.Point(0, 936)
+        Me.btnHelp.Name = "btnHelp"
+        Me.btnHelp.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnHelp.Size = New System.Drawing.Size(191, 45)
+        Me.btnHelp.TabIndex = 10
+        Me.btnHelp.Text = "Ayuda"
+        Me.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnHelp.UseVisualStyleBackColor = False
         '
         'PanelSubmenuReportes
         '
@@ -261,6 +364,24 @@ Partial Class Menu
         Me.btnSubMedicamentosR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSubMedicamentosR.UseVisualStyleBackColor = False
         '
+        'btnReportes
+        '
+        Me.btnReportes.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.btnReportes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnReportes.FlatAppearance.BorderSize = 0
+        Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReportes.Image = CType(resources.GetObject("btnReportes.Image"), System.Drawing.Image)
+        Me.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnReportes.Location = New System.Drawing.Point(0, 642)
+        Me.btnReportes.Name = "btnReportes"
+        Me.btnReportes.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnReportes.Size = New System.Drawing.Size(191, 45)
+        Me.btnReportes.TabIndex = 8
+        Me.btnReportes.Text = "Reportes"
+        Me.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnReportes.UseVisualStyleBackColor = False
+        '
         'PanelSubmenuConsultas
         '
         Me.PanelSubmenuConsultas.BackColor = System.Drawing.Color.Black
@@ -372,6 +493,42 @@ Partial Class Menu
         Me.btnSubMedicamentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSubMedicamentos.UseVisualStyleBackColor = False
         '
+        'btnConsultas
+        '
+        Me.btnConsultas.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.btnConsultas.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnConsultas.FlatAppearance.BorderSize = 0
+        Me.btnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsultas.Image = CType(resources.GetObject("btnConsultas.Image"), System.Drawing.Image)
+        Me.btnConsultas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnConsultas.Location = New System.Drawing.Point(0, 348)
+        Me.btnConsultas.Name = "btnConsultas"
+        Me.btnConsultas.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnConsultas.Size = New System.Drawing.Size(191, 45)
+        Me.btnConsultas.TabIndex = 6
+        Me.btnConsultas.Text = "Consultas"
+        Me.btnConsultas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnConsultas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnConsultas.UseVisualStyleBackColor = False
+        '
+        'btnVender
+        '
+        Me.btnVender.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.btnVender.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnVender.FlatAppearance.BorderSize = 0
+        Me.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVender.Image = CType(resources.GetObject("btnVender.Image"), System.Drawing.Image)
+        Me.btnVender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnVender.Location = New System.Drawing.Point(0, 303)
+        Me.btnVender.Name = "btnVender"
+        Me.btnVender.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnVender.Size = New System.Drawing.Size(191, 45)
+        Me.btnVender.TabIndex = 4
+        Me.btnVender.Text = "$Vender"
+        Me.btnVender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnVender.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnVender.UseVisualStyleBackColor = False
+        '
         'PanelSubmenuMedicamentos
         '
         Me.PanelSubmenuMedicamentos.BackColor = System.Drawing.Color.Black
@@ -432,6 +589,24 @@ Partial Class Menu
         Me.btnRegProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnRegProveedores.UseVisualStyleBackColor = False
         '
+        'btnMedicamentos
+        '
+        Me.btnMedicamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.btnMedicamentos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnMedicamentos.FlatAppearance.BorderSize = 0
+        Me.btnMedicamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMedicamentos.Image = CType(resources.GetObject("btnMedicamentos.Image"), System.Drawing.Image)
+        Me.btnMedicamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMedicamentos.Location = New System.Drawing.Point(0, 132)
+        Me.btnMedicamentos.Name = "btnMedicamentos"
+        Me.btnMedicamentos.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnMedicamentos.Size = New System.Drawing.Size(191, 45)
+        Me.btnMedicamentos.TabIndex = 2
+        Me.btnMedicamentos.Text = "Medicamentos"
+        Me.btnMedicamentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMedicamentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnMedicamentos.UseVisualStyleBackColor = False
+        '
         'PanelSubmenuUsuarios
         '
         Me.PanelSubmenuUsuarios.BackColor = System.Drawing.Color.Black
@@ -475,112 +650,6 @@ Partial Class Menu
         Me.btnrRegUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnrRegUsuario.UseVisualStyleBackColor = False
         '
-        'pnlContenido
-        '
-        Me.pnlContenido.AutoScroll = True
-        Me.pnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlContenido.Location = New System.Drawing.Point(208, 43)
-        Me.pnlContenido.Name = "pnlContenido"
-        Me.pnlContenido.Size = New System.Drawing.Size(741, 556)
-        Me.pnlContenido.TabIndex = 2
-        '
-        'tmOcultarMenu
-        '
-        '
-        'tmMostrarMenu
-        '
-        '
-        'btnHelp
-        '
-        Me.btnHelp.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.btnHelp.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnHelp.FlatAppearance.BorderSize = 0
-        Me.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHelp.Image = CType(resources.GetObject("btnHelp.Image"), System.Drawing.Image)
-        Me.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnHelp.Location = New System.Drawing.Point(0, 936)
-        Me.btnHelp.Name = "btnHelp"
-        Me.btnHelp.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnHelp.Size = New System.Drawing.Size(191, 45)
-        Me.btnHelp.TabIndex = 10
-        Me.btnHelp.Text = "Ayuda"
-        Me.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnHelp.UseVisualStyleBackColor = False
-        '
-        'btnReportes
-        '
-        Me.btnReportes.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.btnReportes.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnReportes.FlatAppearance.BorderSize = 0
-        Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReportes.Image = CType(resources.GetObject("btnReportes.Image"), System.Drawing.Image)
-        Me.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReportes.Location = New System.Drawing.Point(0, 642)
-        Me.btnReportes.Name = "btnReportes"
-        Me.btnReportes.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnReportes.Size = New System.Drawing.Size(191, 45)
-        Me.btnReportes.TabIndex = 8
-        Me.btnReportes.Text = "Reportes"
-        Me.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnReportes.UseVisualStyleBackColor = False
-        '
-        'btnConsultas
-        '
-        Me.btnConsultas.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.btnConsultas.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnConsultas.FlatAppearance.BorderSize = 0
-        Me.btnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConsultas.Image = CType(resources.GetObject("btnConsultas.Image"), System.Drawing.Image)
-        Me.btnConsultas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnConsultas.Location = New System.Drawing.Point(0, 348)
-        Me.btnConsultas.Name = "btnConsultas"
-        Me.btnConsultas.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnConsultas.Size = New System.Drawing.Size(191, 45)
-        Me.btnConsultas.TabIndex = 6
-        Me.btnConsultas.Text = "Consultas"
-        Me.btnConsultas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnConsultas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnConsultas.UseVisualStyleBackColor = False
-        '
-        'btnVender
-        '
-        Me.btnVender.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.btnVender.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnVender.FlatAppearance.BorderSize = 0
-        Me.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVender.Image = CType(resources.GetObject("btnVender.Image"), System.Drawing.Image)
-        Me.btnVender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnVender.Location = New System.Drawing.Point(0, 303)
-        Me.btnVender.Name = "btnVender"
-        Me.btnVender.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnVender.Size = New System.Drawing.Size(191, 45)
-        Me.btnVender.TabIndex = 4
-        Me.btnVender.Text = "$Vender"
-        Me.btnVender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnVender.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnVender.UseVisualStyleBackColor = False
-        '
-        'btnMedicamentos
-        '
-        Me.btnMedicamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.btnMedicamentos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnMedicamentos.FlatAppearance.BorderSize = 0
-        Me.btnMedicamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMedicamentos.Image = CType(resources.GetObject("btnMedicamentos.Image"), System.Drawing.Image)
-        Me.btnMedicamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMedicamentos.Location = New System.Drawing.Point(0, 132)
-        Me.btnMedicamentos.Name = "btnMedicamentos"
-        Me.btnMedicamentos.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnMedicamentos.Size = New System.Drawing.Size(191, 45)
-        Me.btnMedicamentos.TabIndex = 2
-        Me.btnMedicamentos.Text = "Medicamentos"
-        Me.btnMedicamentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMedicamentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnMedicamentos.UseVisualStyleBackColor = False
-        '
         'btnUsuarios
         '
         Me.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -599,97 +668,28 @@ Partial Class Menu
         Me.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnUsuarios.UseVisualStyleBackColor = False
         '
-        'btnMenu
+        'pnlContenido
         '
-        Me.btnMenu.BackgroundImage = CType(resources.GetObject("btnMenu.BackgroundImage"), System.Drawing.Image)
-        Me.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnMenu.FlatAppearance.BorderSize = 0
-        Me.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMenu.Location = New System.Drawing.Point(221, 0)
-        Me.btnMenu.Name = "btnMenu"
-        Me.btnMenu.Size = New System.Drawing.Size(35, 37)
-        Me.btnMenu.TabIndex = 3
-        Me.btnMenu.UseVisualStyleBackColor = False
+        Me.pnlContenido.AutoScroll = True
+        Me.pnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
+        Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlContenido.Location = New System.Drawing.Point(208, 43)
+        Me.pnlContenido.Name = "pnlContenido"
+        Me.pnlContenido.Size = New System.Drawing.Size(741, 556)
+        Me.pnlContenido.TabIndex = 2
         '
-        'PictureBox2
+        'tmOcultarMenu
         '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(2, 2)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(46, 37)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
         '
-        'btnMinizar
+        'tmMostrarMenu
         '
-        Me.btnMinizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMinizar.BackgroundImage = CType(resources.GetObject("btnMinizar.BackgroundImage"), System.Drawing.Image)
-        Me.btnMinizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnMinizar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinizar.FlatAppearance.BorderSize = 0
-        Me.btnMinizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnMinizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinizar.Location = New System.Drawing.Point(829, 0)
-        Me.btnMinizar.Name = "btnMinizar"
-        Me.btnMinizar.Size = New System.Drawing.Size(40, 40)
-        Me.btnMinizar.TabIndex = 1
-        Me.btnMinizar.UseVisualStyleBackColor = True
-        '
-        'btnRestaurar
-        '
-        Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRestaurar.BackgroundImage = CType(resources.GetObject("btnRestaurar.BackgroundImage"), System.Drawing.Image)
-        Me.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRestaurar.FlatAppearance.BorderSize = 0
-        Me.btnRestaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRestaurar.Location = New System.Drawing.Point(869, 0)
-        Me.btnRestaurar.Name = "btnRestaurar"
-        Me.btnRestaurar.Size = New System.Drawing.Size(40, 40)
-        Me.btnRestaurar.TabIndex = 1
-        Me.btnRestaurar.UseVisualStyleBackColor = True
-        Me.btnRestaurar.Visible = False
-        '
-        'btnMaximizar
-        '
-        Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMaximizar.BackgroundImage = CType(resources.GetObject("btnMaximizar.BackgroundImage"), System.Drawing.Image)
-        Me.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMaximizar.FlatAppearance.BorderSize = 0
-        Me.btnMaximizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximizar.Location = New System.Drawing.Point(869, 0)
-        Me.btnMaximizar.Name = "btnMaximizar"
-        Me.btnMaximizar.Size = New System.Drawing.Size(40, 40)
-        Me.btnMaximizar.TabIndex = 1
-        Me.btnMaximizar.UseVisualStyleBackColor = True
-        '
-        'btnCerrar
-        '
-        Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCerrar.BackgroundImage = CType(resources.GetObject("btnCerrar.BackgroundImage"), System.Drawing.Image)
-        Me.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCerrar.FlatAppearance.BorderSize = 0
-        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrar.Location = New System.Drawing.Point(909, 0)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(40, 40)
-        Me.btnCerrar.TabIndex = 1
-        Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(929, 556)
+        Me.ClientSize = New System.Drawing.Size(949, 599)
         Me.Controls.Add(Me.pnlContenido)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.pnlTitule)
@@ -703,12 +703,12 @@ Partial Class Menu
         Me.pnlTitule.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlMenu.ResumeLayout(False)
         Me.PanelSubmenuReportes.ResumeLayout(False)
         Me.PanelSubmenuConsultas.ResumeLayout(False)
         Me.PanelSubmenuMedicamentos.ResumeLayout(False)
         Me.PanelSubmenuUsuarios.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
